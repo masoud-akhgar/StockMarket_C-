@@ -6,3 +6,6 @@ it starts from run function.
 there are insert command, pull command, and edit command.
 the commands are like ["insert", "id", "price","volume","sell / buy", "'A'/'T'/'W'" as a brand]
 for other commands, the format is obviously different.
+
+Firstly, I recognize the command in the run, and then tokenizing the string in the specific functions (insert, amend).
+the offers would be stored in a vector of Node structs efficiently (sorted) and each time, the stock would be ckecked if we have a match (same price, same brand, sell and buy orders) and then it would match them up.
